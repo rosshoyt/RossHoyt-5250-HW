@@ -6,8 +6,9 @@ namespace Mine.Models
 {
     public enum MenuItemType
     {
-        Browse,
-        About
+        Items,
+        About,
+        Game
     }
     public class HomeMenuItem
     {
