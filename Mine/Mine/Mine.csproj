@@ -27,4 +27,8 @@
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Items\" />
+  </ItemGroup>
 </Project>
