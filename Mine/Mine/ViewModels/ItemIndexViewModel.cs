@@ -54,5 +54,10 @@ namespace Mine.ViewModels
                 IsBusy = false;
             }
         }
+
+        public async Task<ItemModel> ReadAsync(string id)
+        {
+            return await DataStore.ReadAsync(id);
+        }
     }
 }
