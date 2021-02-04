@@ -54,11 +54,16 @@ namespace Mine.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ItemModel>> IndexAsync(bool forceRefresh = false)
+        /// <summary>
+        /// Method that returns all item models from the database asynchronously
+        /// </summary>
+        /// <param name="forceRefresh"></param>
+        /// <returns></returns>
+        public async Task<IEnumerable<ItemModel>> IndexAsync(bool forceRefresh = false)
         {
-            throw new NotImplementedException();
+            // get the entires asynchronously
+            var result = await Database.Table<ItemModel>().ToListAsync();
+            return result;
         }
-
-        //...
     }
 }
